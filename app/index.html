@@ -1,166 +1,124 @@
 <!doctype html>
-<html class="no-js" lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>synth pad</title>
+<html class="no-js" lang="">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>synth pad</title>
 
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <!-- Place favicon.ico in the root directory -->
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <!-- Place favicon.ico in the root directory -->
 
-    <!-- build:css styles/vendor.css -->
-    <!-- bower:css -->
-    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css" />
-    <!-- endbower -->
-    <!-- endbuild -->
+  <!-- build:css styles/vendor.css -->
+  <!-- bower:css -->
+  <!-- endbower -->
+  <!-- endbuild -->
 
-    <!-- build:css styles/main.css -->
-    <link rel="stylesheet" href="styles/main.css">
-    <!-- core CSS file -->
-    <link rel="stylesheet" href="styles/style.css">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Overpass" rel="stylesheet">
-    <!-- endbuild -->
-    
-    <!-- build:js scripts/vendor/modernizr.js -->
-    <script src="/bower_components/modernizr/modernizr.js"></script>
-    <!-- endbuild -->
-  </head>
-  <body>
+  <!-- build:css styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- core CSS file -->
+  <link rel="stylesheet" href="styles/style.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Overpass" rel="stylesheet">
+  <!-- endbuild -->
+
+  <!-- build:js scripts/vendor/modernizr.js -->
+  <script src="/bower_components/modernizr/modernizr.js"></script>
+  <!-- endbuild -->
+</head>
+<body>
     <!--[if IE]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
-    
-<!--     <div class="container">
-      <div class="header">
-        <ul class="nav nav-pills pull-right">
-          <li class="active">
-            <a href="#">Home</a>
-          </li>
-          <li>
-            <a href="#">About</a>
-          </li>
-          <li>
-            <a href="#">Contact</a>
-          </li>
-        </ul>
-        <h3 class="text-muted">synth pad</h3>
-      </div>
+      <![endif]-->
 
-      <div class="jumbotron">
-        <h1>'Allo, 'Allo!</h1>
-        <p class="lead">Always a pleasure scaffolding your apps.</p>
-        <p><a class="btn btn-lg btn-success" href="#">Splendid!</a></p>
-      </div>
+      <div id="wrapper">
 
-      <div class="row marketing">
-        <div class="col-lg-6">
-          <h4>HTML5 Boilerplate</h4>
-          <p>HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.</p>
+        <section id="pads">
 
-          <h4>Bootstrap</h4>
-          <p>Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.</p>
+          <div class="row"> <!-- first row -->
 
-          <h4>Modernizr</h4>
-          <p>Modernizr is an open-source JavaScript library that helps you build the next generation of HTML5 and CSS3-powered websites.</p>
-        </div>
-      </div>
+            <button id="pad1" data-sound="assets/sounds/clap.wav" data-key="81">
+              <kbd>Q</kbd>
+              <span class="sound">clap</span>
+            </button>
 
-      <div class="footer">
-        <p>♥ from the Yeoman team</p>
-      </div>
-    </div> -->
+            <button id="pad2" data-sound="assets/sounds/hihat.wav" data-key="119">
+              <kbd>W</kbd>
+              <span class="sound">hihat</span>
+            </button>
 
+            <button id="pad3" data-sound="assets/sounds/kick.wav" data-key="101">
+              <kbd>E</kbd>
+              <span class="sound">kick</span>
+            </button>
 
-<div id="wrapper">
+          </div> <!-- end first row -->
 
-    <section id="pads">
+          <div class="row"> <!-- second row -->
 
-      <div class="row"> <!-- first row -->
+            <button id="pad4" data-sound="assets/sounds/openhat.wav" data-key="97">
+              <kbd>A</kbd>
+              <span class="sound">openhat</span>
+            </button>
 
-        <button id="pad1" data-sound="assets/sounds/clap.wav" data-key="81">
-          <kbd>Q</kbd>
-          <span class="sound">clap</span>
-        </button>
+            <button id="pad5" data-sound="assets/sounds/boom.wav" data-key="115">
+              <kbd>S</kbd>
+              <span class="sound">boom</span>
+            </button>
 
-        <button id="pad2" data-sound="assets/sounds/hihat.wav" data-key="119">
-          <kbd>W</kbd>
-          <span class="sound">hihat</span>
-        </button>
+            <button id="pad6" data-sound="assets/sounds/ride.wav" data-key="100">
+              <kbd>D</kbd>
+              <span class="sound">ride</span>
+            </button>
 
-        <button id="pad3" data-sound="assets/sounds/kick.wav" data-key="101">
-          <kbd>E</kbd>
-          <span class="sound">kick</span>
-        </button>
+          </div> <!-- end second row -->
 
-      </div> <!-- end first row -->
+          <div class="row"> <!-- third row -->
 
-      <div class="row"> second row
+            <button id="pad7" data-sound="assets/sounds/snare.wav" data-key="122">
+              <kbd>Z</kbd>
+              <span class="sound">snare</span>
+            </button>
 
-        <button id="pad4" data-sound="assets/sounds/openhat.wav" data-key="97">
-          <kbd>A</kbd>
-          <span class="sound">openhat</span>
-        </button>
+            <button id="pad8" data-sound="assets/sounds/tom.wav" data-key="120">
+              <kbd>X</kbd>
+              <span class="sound">tom</span>
+            </button>
 
-        <button id="pad5" data-sound="assets/sounds/boom.wav" data-key="115">
-          <kbd>S</kbd>
-          <span class="sound">boom</span>
-        </button>
+            <button id="pad9" data-sound="assets/sounds/tink.wav" data-key="99">
+              <kbd>C</kbd>
+              <span class="sound">tink</span>
+            </button>
 
-        <button id="pad6" data-sound="assets/sounds/ride.wav" data-key="100">
-          <kbd>D</kbd>
-          <span class="sound">ride</span>
-        </button>
+          </div>  <!-- end third row -->
 
-      </div> end second row
+          <div class="footer">JavaScript powered SynthPad</div>
 
-      <div class="row"> third row
-
-        <button id="pad7" data-sound="assets/sounds/snare.wav" data-key="122">
-          <kbd>Z</kbd>
-          <span class="sound">snare</span>
-        </button>
-
-        <button id="pad8" data-sound="assets/sounds/tom.wav" data-key="120">
-          <kbd>X</kbd>
-          <span class="sound">tom</span>
-        </button>
-
-        <button id="pad9" data-sound="assets/sounds/tink.wav" data-key="99">
-          <kbd>C</kbd>
-          <span class="sound">tink</span>
-        </button>
-
-      </div>  <!-- end third row -->
-
-      <div class="footer">JavaScript powered SynthPad</div>
-
-    </section>  <!-- end #pads -->
+        </section>  <!-- end #pads -->
 
 
 
-    <section id="volume-control">
-      <label for="volume">Volume Control</label>
-      <div class="slider-wrapper">
-        <input type="range" min="0" max="10" step="0.1" list="tickmarks" />
-        <datalist id="tickmarks">
-          <option value="0" label="0" />
-          <option value="1" />
-          <option value="2" />
-          <option value="3" />
-          <option value="4" />
-          <option value="5" label="5" />
-          <option value="6" />
-          <option value="7" />
-          <option value="8" />
-          <option value="9" />
-          <option value="10" label="10" />
-        </datalist>
-      </div>
-      
+        <section id="volume-control">
+          <label for="volume">Volume Control</label>
+          <div class="slider-wrapper">
+            <input type="range" min="0" max="10" step="0.1" list="tickmarks" />
+            <datalist id="tickmarks">
+              <option value="0" label="0" />
+              <option value="1" />
+              <option value="2" />
+              <option value="3" />
+              <option value="4" />
+              <option value="5" label="5" />
+              <option value="6" />
+              <option value="7" />
+              <option value="8" />
+              <option value="9" />
+              <option value="10" label="10" />
+            </datalist>
+          </div>
 
-    </section> <!-- end #volume-control -->
+
+        </section> <!-- end #volume-control -->
 
 
 
@@ -168,44 +126,38 @@
 
 
 
-  </div> <!-- end #wrapper -->
+      </div> <!-- end #wrapper -->
 
+      <audio data-key="81" src="sounds/clap.wav"></audio>
+      <audio data-key="119" src="sounds/hihat.wav"></audio>
+      <audio data-key="101" src="sounds/kick.wav"></audio>
+      <audio data-key="97" src="sounds/openhat.wav"></audio>
+      <audio data-key="115" src="sounds/boom.wav"></audio>
+      <audio data-key="100" src="sounds/ride.wav"></audio>
+      <audio data-key="122" src="sounds/snare.wav"></audio>
+      <audio data-key="120" src="sounds/tom.wav"></audio>
+      <audio data-key="99" src="sounds/tink.wav"></audio>
 
-     -->
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-    <script>
-      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-      e.src='https://www.google-analytics.com/analytics.js';
-      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-      ga('create','UA-XXXXX-X');ga('send','pageview');
-    </script>
+      <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+      <script>
+        (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+          function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+        e.src='https://www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+        ga('create','UA-XXXXX-X');ga('send','pageview');
+      </script>
 
-    <!-- build:js scripts/vendor.js -->
-    <!-- bower:js -->
-    <script src="/bower_components/jquery/dist/jquery.js"></script>
-    <script src="/bower_components/modernizr/modernizr.js"></script>
-    <!-- endbower -->
-    <!-- endbuild -->
-    
-    <!-- build:js scripts/plugins.js -->
-    <script src="/bower_components/bootstrap/js/affix.js"></script>
-    <script src="/bower_components/bootstrap/js/alert.js"></script>
-    <script src="/bower_components/bootstrap/js/dropdown.js"></script>
-    <script src="/bower_components/bootstrap/js/tooltip.js"></script>
-    <script src="/bower_components/bootstrap/js/modal.js"></script>
-    <script src="/bower_components/bootstrap/js/transition.js"></script>
-    <script src="/bower_components/bootstrap/js/button.js"></script>
-    <script src="/bower_components/bootstrap/js/popover.js"></script>
-    <script src="/bower_components/bootstrap/js/carousel.js"></script>
-    <script src="/bower_components/bootstrap/js/scrollspy.js"></script>
-    <script src="/bower_components/bootstrap/js/collapse.js"></script>
-    <script src="/bower_components/bootstrap/js/tab.js"></script>
-    <!-- endbuild -->
-    
-    <!-- build:js scripts/main.js -->
-    <script src="scripts/main.js"></script>
-    <!-- endbuild -->
-  </body>
-</html>
+      <!-- build:js scripts/vendor.js -->
+      <!-- bower:js -->
+      <script src="/bower_components/modernizr/modernizr.js"></script>
+      <!-- jQuery snippet via Google Developers -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <!-- endbower -->
+      <!-- endbuild -->
+
+      <!-- build:js scripts/main.js -->
+      <script src="scripts/main.js"></script>
+      <!-- endbuild -->
+    </body>
+    </html>
