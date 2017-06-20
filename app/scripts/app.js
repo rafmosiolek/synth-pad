@@ -39,7 +39,7 @@ window.onload = function() {
     console.log(event.id);
   }
 
-
+ 
   function stop() {
     if (preload !== null) {
       preload.close();
