@@ -1,9 +1,9 @@
 window.onload = function() {
-  console.log("JS Beat Machine ready.");
+  console.log("JS Synth Pad is ready.");
 
 
   // declare variables
-  var preloader, loader;
+  var preloader, loader, target;
 
   // create a preloader to load the audio files
   loader = new createjs.LoadQueue(false);
@@ -48,6 +48,8 @@ window.onload = function() {
   }
   function playSound(target) {
     //Play the sound: play (src, interrupt, delay, offset, loop, volume, pan)
+    target = document.querySelectorAll("button");
+    target.addEventListener("click");
     var instance = createjs.Sound.play(target.id);
     if (instance === null || instance.playState == createjs.Sound.PLAY_FAILED) {
       return;
