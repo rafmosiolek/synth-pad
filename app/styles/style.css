@@ -20,19 +20,21 @@ input, label {
 #wrapper {
     overflow: hidden;
     margin: 100px auto;
+    padding: 20px;
     width: 500px;
     -webkit-box-shadow: 12px 10px 50px 0px #000000;
     -moz-box-shadow: 12px 10px 50px 0px #000000;
     box-shadow: 12px 10px 50px 0px #000000;
     border-radius: 10px;
 
+    background: /*#34495e;*/ #ecf0f1;
+    opacity: 0.8;
+
+
 }
 
 section {
     height: 350px;
-    background: /*#34495e;*/ #ecf0f1;
-    opacity: 0.8;
-
 }
 
 #pads {
@@ -121,5 +123,6 @@ button kbd {
 .footer {
     /*font-family: "Press Start 2P"*/;
     font-size: 12px;
-    padding-top: 4px;
+    padding: 0px 0px 20px 70px;
+
 }
