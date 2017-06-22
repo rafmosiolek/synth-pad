@@ -6,6 +6,7 @@
   function playSound(e) {
     var audio = document.querySelector('audio[data-key]');
     var pad = document.querySelector('button[data-key]');
+
     if (!audio) return;
 
     pad.classList.add('playing');
@@ -18,4 +19,6 @@
     return pad.addEventListener('transitionend', removeTransition);
   });
 
-  window.addEventListener('keydown', playSound);
+  window.addEventListener('keydown', playSound); 
+
+
