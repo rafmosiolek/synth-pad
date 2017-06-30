@@ -12,9 +12,7 @@ var padAudio = document.querySelectorAll("button[data-sound='sounds/kick.wav']")
 // pad.addEventListener("click", playSound);
 
 for (var i = 0; i < pad.length; i++) {
-
 	pad[i].addEventListener("click", playSound);
-
 }
 
 function removeTransition(e) {
@@ -53,25 +51,18 @@ window.addEventListener("keydown", onKeyDown);
 function onKeyDown(e) {
 
 
+
 	var audioKeyCode = e.code;
 	console.log(audioKeyCode);
 
 	var audioSrc = document.querySelector("audio[data-key='" + audioKeyCode + "']");
 	console.log(audioSrc);
 
-	audioSrc.classList.add('playing');
 	audioSrc.currentTime = 0;
 	audioSrc.play();
 
-
-
-// 	var audioKey = document.querySelector("audio[data-key]");
-// 	console.log(audioKey);
-
-// 	if (audioKeyCode === audioKey.currentSrc) {
-// 		audio.currentTime = 0;
-// 		audio.play();
-// 	}
+	var audioPad = document.querySelector("button[data-key='" + audioKeyCode + "']");
+	audioPad.classList.add("playing");
 
 }
 
