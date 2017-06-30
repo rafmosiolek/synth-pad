@@ -51,16 +51,18 @@ function playSound(e) {
 window.addEventListener("keydown", onKeyPress);
 
 function onKeyPress(e) {
-	var audioSrc = e.code;
 
-	console.log(audioSrc);
+
+
+	var audioKeyCode = e.code;
+	console.log(audioKeyCode);
+
+
+
+
 }
 
 // MDN code keyQ
-
-
-
-
 
 
 

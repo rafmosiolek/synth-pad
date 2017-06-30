@@ -1,167 +1,157 @@
 <!doctype html>
 <html class="no-js" lang="">
 <head>
-  <meta charset="utf-8">
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>synth pad</title>
+	<meta charset="utf-8">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>synth pad</title>
 
-  <link rel="apple-touch-icon" href="favicon.ico">
-  <!-- Place favicon.ico in the root directory -->
+	<link rel="apple-touch-icon" href="favicon.ico">
+	<!-- Place favicon.ico in the root directory -->
+	<!-- build:css styles/vendor.css -->
+	<!-- bower:css -->
+	<!-- endbower -->
+	<!-- endbuild -->
 
-  <!-- build:css styles/vendor.css -->
-  <!-- bower:css -->
-  <!-- endbower -->
-  <!-- endbuild -->
+	<!-- build:css styles/main.css -->
+	<link rel="stylesheet" href="styles/main.css">
+	<!-- core CSS file -->
+	<link rel="stylesheet" href="styles/style.css">
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+	<!-- endbuild -->
 
-  <!-- build:css styles/main.css -->
-  <link rel="stylesheet" href="styles/main.css">
-  <!-- core CSS file -->
-  <link rel="stylesheet" href="styles/style.css">
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
-  <!-- endbuild -->
-
-  <!-- build:js scripts/vendor/modernizr.js -->
-  <script src="/bower_components/modernizr/modernizr.js"></script>
-  <!-- endbuild -->
+	<!-- build:js scripts/vendor/modernizr.js -->
+	<script src="/bower_components/modernizr/modernizr.js"></script>
+	<!-- endbuild -->
 </head>
 <body>
-    <!--[if IE]>
-      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-      <![endif]-->
+<!--[if IE]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
 
-      <div id="wrapper">
+	<div id="wrapper">
 
-        <section id="pads">
+		<section id="pads">
 
-          <div class="row"> <!-- first row -->
+			<div class="row"> <!-- first row -->
 
-            <button id="pad1" class="pad" data-sound="sounds/clap.wav" data-key="81">
-              <kbd>Q</kbd>
-              <span class="sound">clap</span>
-            </button>
+				<button id="pad1" class="pad" data-sound="sounds/clap.wav" data-key="keyQ">
+					<kbd>Q</kbd>
+					<span class="sound">clap</span>
+				</button>
 
-            <button id="pad2" class="pad" data-sound="sounds/hihat.wav" data-key="119">
-              <kbd>W</kbd>
-              <span class="sound">hihat</span>
-            </button>
+				<button id="pad2" class="pad" data-sound="sounds/hihat.wav" data-key="keyW">
+					<kbd>W</kbd>
+					<span class="sound">hihat</span>
+				</button>
 
-            <button id="pad3" class="pad" data-sound="sounds/kick.wav" data-key="101">
-              <kbd>E</kbd>
-              <span class="sound">kick</span>
-            </button>
+				<button id="pad3" class="pad" data-sound="sounds/kick.wav" data-key="keyE">
+					<kbd>E</kbd>
+					<span class="sound">kick</span>
+				</button>
 
-          </div> <!-- end first row -->
+			</div> <!-- end first row -->
 
-          <div class="row"> <!-- second row -->
+			<div class="row"> <!-- second row -->
 
-            <button id="pad4" class="pad" data-sound="sounds/openhat.wav" data-key="97">
-              <kbd>A</kbd>
-              <span class="sound">openhat</span>
-            </button>
+				<button id="pad4" class="pad" data-sound="sounds/openhat.wav" data-key="keyA">
+					<kbd>A</kbd>
+					<span class="sound">openhat</span>
+				</button>
 
-            <button id="pad5" class="pad" data-sound="sounds/boom.wav" data-key="115">
-              <kbd>S</kbd>
-              <span class="sound">boom</span>
-            </button>
+				<button id="pad5" class="pad" data-sound="sounds/boom.wav" data-key="keyS">
+					<kbd>S</kbd>
+					<span class="sound">boom</span>
+				</button>
 
-            <button id="pad6" class="pad" data-sound="sounds/ride.wav" data-key="100">
-              <kbd>D</kbd>
-              <span class="sound">ride</span>
-            </button>
+				<button id="pad6" class="pad" data-sound="sounds/ride.wav" data-key="keyD">
+					<kbd>D</kbd>
+					<span class="sound">ride</span>
+				</button>
 
-          </div> <!-- end second row -->
+			</div> <!-- end second row -->
 
-          <div class="row"> <!-- third row -->
+			<div class="row"> <!-- third row -->
 
-            <button id="pad7" class="pad" data-sound="sounds/snare.wav" data-key="122">
-              <kbd>Z</kbd>
-              <span class="sound">snare</span>
-            </button>
+				<button id="pad7" class="pad" data-sound="sounds/snare.wav" data-key="keyZ">
+					<kbd>Z</kbd>
+					<span class="sound">snare</span>
+				</button>
 
-            <button id="pad8" class="pad" data-sound="sounds/tom.wav" data-key="120">
-              <kbd>X</kbd>
-              <span class="sound">tom</span>
-            </button>
+				<button id="pad8" class="pad" data-sound="sounds/tom.wav" data-key="keyX">
+					<kbd>X</kbd>
+					<span class="sound">tom</span>
+				</button>
 
-            <button id="pad9" class="pad" data-sound="sounds/tink.wav" data-key="99">
-              <kbd>C</kbd>
-              <span class="sound">tink</span>
-            </button>
+				<button id="pad9" class="pad" data-sound="sounds/tink.wav" data-key="keyC">
+					<kbd>C</kbd>
+					<span class="sound">tink</span>
+				</button>
 
-          </div>  <!-- end third row -->
-
-          
-
-        </section>  <!-- end #pads -->
+			</div>  <!-- end third row -->
+		</section>  <!-- end #pads -->
 
 
-
-        <section id="volume-control">
-          <label for="volume">Volume Control</label>
-          <div class="slider-wrapper">
-            <input type="range" min="0" max="10" step="0.1" list="tickmarks" />
-            <datalist id="tickmarks">
-              <option value="0" label="0" />
-              <option value="1" />
-              <option value="2" />
-              <option value="3" />
-              <option value="4" />
-              <option value="5" label="5" />
-              <option value="6" />
-              <option value="7" />
-              <option value="8" />
-              <option value="9" />
-              <option value="10" label="10" />
-            </datalist>
-          </div>
-
-
-        </section> <!-- end #volume-control -->
+		<section id="volume-control">
+			<label for="volume">Volume Control</label>
+			<div class="slider-wrapper">
+				<input type="range" min="0" max="10" step="0.1" list="tickmarks" />
+				<datalist id="tickmarks">
+					<option value="0" label="0" />
+					<option value="1" />
+					<option value="2" />
+					<option value="3" />
+					<option value="4" />
+					<option value="5" label="5" />
+					<option value="6" />
+					<option value="7" />
+					<option value="8" />
+					<option value="9" />
+					<option value="10" label="10" />
+				</datalist>
+			</div>
+		</section> <!-- end #volume-control -->
 
 
+		<div class="footer">JavaScript powered SynthPad</div>
 
+	</div> <!-- end #wrapper -->
 
-
-<div class="footer">JavaScript powered SynthPad</div>
-
-      </div> <!-- end #wrapper -->
-
-      <audio data-key="keyQ" src="sounds/clap.wav"></audio>
-      <audio data-key="119" src="sounds/hihat.wav"></audio>
-      <audio data-key="101" src="sounds/kick.wav"></audio>
-      <audio data-key="97" src="sounds/openhat.wav"></audio>
-      <audio data-key="115" src="sounds/boom.wav"></audio>
-      <audio data-key="100" src="sounds/ride.wav"></audio>
-      <audio data-key="122" src="sounds/snare.wav"></audio>
-      <audio data-key="120" src="sounds/tom.wav"></audio>
-      <audio data-key="99" src="sounds/tink.wav"></audio>
+	<audio data-key="keyQ" src="sounds/clap.wav"></audio>
+	<audio data-key="keyW" src="sounds/hihat.wav"></audio>
+	<audio data-key="keyE" src="sounds/kick.wav"></audio>
+	<audio data-key="keyA" src="sounds/openhat.wav"></audio>
+	<audio data-key="keyS" src="sounds/boom.wav"></audio>
+	<audio data-key="keyD" src="sounds/ride.wav"></audio>
+	<audio data-key="keyZ" src="sounds/snare.wav"></audio>
+	<audio data-key="keyX" src="sounds/tom.wav"></audio>
+	<audio data-key="keyC" src="sounds/tink.wav"></audio>
 
 
 
-      <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-<!--       <script>
-        (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-          function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-        e.src='https://www.google-analytics.com/analytics.js';
-        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-        ga('create','UA-XXXXX-X');ga('send','pageview');
-      </script> -->
+	<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+	<!--       <script>
+	(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+	function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+	e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+	e.src='https://www.google-analytics.com/analytics.js';
+	r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+	ga('create','UA-XXXXX-X');ga('send','pageview');
+	</script> -->
 
-      <!-- build:js scripts/vendor.js -->
-      <!-- bower:js -->
-      <script src="/bower_components/modernizr/modernizr.js"></script>
-      <!-- endbower -->
-      <!-- endbuild -->
+	<!-- build:js scripts/vendor.js -->
+	<!-- bower:js -->
+	<script src="/bower_components/modernizr/modernizr.js"></script>
+	<!-- endbower -->
+	<!-- endbuild -->
 
-      <!-- build:js scripts/main.js -->
-      <script src="scripts/script.js"></script>
-        <!-- SoundJS library -->
-      <script src="https://code.createjs.com/soundjs-0.6.2.min.js"></script>
-      <!-- PreloadJS library -->
-      <script src="https://code.createjs.com/preloadjs-0.6.2.min.js"></script>
-      <!-- endbuild -->
-    </body>
-    </html>
+	<!-- build:js scripts/main.js -->
+	<script src="scripts/script.js"></script>
+	<!-- SoundJS library -->
+	<script src="https://code.createjs.com/soundjs-0.6.2.min.js"></script>
+	<!-- PreloadJS library -->
+	<script src="https://code.createjs.com/preloadjs-0.6.2.min.js"></script>
+	<!-- endbuild -->
+</body>
+</html>
