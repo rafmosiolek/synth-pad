@@ -63,7 +63,3 @@ function removeTransition(e) {
 pad.forEach(function(pad) {
 	return pad.addEventListener('transitionend', removeTransition);
 });
-
-
-
-
