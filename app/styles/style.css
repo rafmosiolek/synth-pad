@@ -1,129 +1,111 @@
 html, body {
-    margin: 0;
-    box-sizing: border-box;
-    /*font-family: "Overpass", sans-serif;*/
-    font-family: "Press Start 2P", sans-serif;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Press Start 2P", sans-serif;
 
 }
 
 body {
-    background: url("images/background.jpg");
-    background-size: cover;
-    width: 100vw;
+	background: url("images/background.jpg");
+	background-size: cover;
+	width: 100vw;
 }
 
 
 input, label {
-    display: block;
+	display: block;
 }
 
 #wrapper {
-    overflow: hidden;
-    margin: 100px auto;
-    padding: 20px;
-    width: 500px;
-    -webkit-box-shadow: 12px 10px 50px 0px #000000;
-    -moz-box-shadow: 12px 10px 50px 0px #000000;
-    box-shadow: 12px 10px 50px 0px #000000;
-    border-radius: 10px;
+	overflow: hidden;
+	margin: 100px auto;
+	padding: 20px;
+	width: 500px;
+	-webkit-box-shadow: 12px 10px 50px 0px #000000;
+	-moz-box-shadow: 12px 10px 50px 0px #000000;
+	box-shadow: 12px 10px 50px 0px #000000;
+	border-radius: 10px;
 
-    background: /*#34495e;*/ #ecf0f1;
-    opacity: 0.8;
+	background: /*#34495e;*/ #ecf0f1;
+	opacity: 0.8;
 
 
 }
 
 section {
-    height: 350px;
+	height: 350px;
 }
 
 #pads {
-    /*background: blue; */
-
-    width: 350px;
-
-/*    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;*/
-
-    float: left;
-
-    display: inline-flex;
-
-    align-items: center;
-    justify-content: center;
-    flex-flow: column wrap;
-    align-content: flex-start;
+	
+	width: 350px;
+	float: left;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	flex-flow: column wrap;
+	align-content: flex-start;
 }
 
 button {
 
-    background: #bdc3c7;
-    border: 1px solid black;
-    border-radius: 8px;
-    
-    margin: 10px;
-    padding: 5px;
+	background: #bdc3c7;
+	border: 1px solid black;
+	border-radius: 8px;
 
-    width: 80px;
-    height: 80px;
+	margin: 10px;
+	padding: 5px;
 
-    outline: none;
-    transition: all .07s ease;
-}
+	width: 80px;
+	height: 80px;
 
-button:active {
-    
+	outline: none;
+	transition: all .07s ease;
 }
 
 button kbd {
-    display: block;
-    margin: 0 auto;
-    font-size: 24px;
+	display: block;
+	margin: 0 auto;
+	font-size: 24px;
 }
 
 .playing {
-  transform: scale(1.1);
-  border-color: #ffc600;
-  box-shadow: 0 0 1rem #ffc600;
-  background: #f1c40f;
+	transform: scale(1.1);
+	border-color: #ffc600;
+	box-shadow: 0 0 1rem #ffc600;
+	background: #f1c40f;
 }
 
 #volume-control {
-    margin: 0 auto;
-    width: 150px;
-    float: left;
+	margin: 0 auto;
+	width: 150px;
+	float: left;
 }
 
 #volume-control label {
-    display: block;
-    margin: 0 auto;
-    padding: 75px 0px 25px 0px;
-    font-size: 15px;
-    text-align: center;
+	display: block;
+	margin: 0 auto;
+	padding: 75px 0px 25px 0px;
+	font-size: 15px;
+	text-align: center;
 }
 
 .slider-wrapper {
-/*  display: inline-block;*/
-  width: 20px;
-  height: 150px;
-  padding: 0;
-  margin: 0 auto;
-
+	width: 20px;
+	height: 150px;
+	padding: 0;
+	margin: 0 auto;
 }
 
 .slider-wrapper input {
-  width: 150px;
-  height: 20px;
-  transform-origin: 75px 75px;
-  transform: rotate(-90deg);
-  padding: 0px;
-
-
+	width: 150px;
+	height: 20px;
+	transform-origin: 75px 75px;
+	transform: rotate(-90deg);
+	padding: 0px;
 }
 
 .footer {
-    /*font-family: "Press Start 2P"*/;
-    font-size: 12px;
-    padding: 0px 0px 20px 70px;
-
+	font-size: 12px;
+	padding: 0px 0px 20px 70px;
 }

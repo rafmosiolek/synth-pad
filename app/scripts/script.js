@@ -1,7 +1,7 @@
 // declare variables
 var audio, pad, pads, audioData;
 
-audio = document.querySelectorAll("audio");
+audio = document.querySelector("audio");
 pad = document.querySelectorAll("button");
 audioData = document.querySelectorAll("audio[src]");
 
@@ -48,21 +48,49 @@ function playSound(e) {
 
 }
 
-window.addEventListener("keydown", onKeyPress);
+window.addEventListener("keydown", onKeyDown);
 
-function onKeyPress(e) {
-
+function onKeyDown(e) {
 
 
 	var audioKeyCode = e.code;
 	console.log(audioKeyCode);
 
+	var audioSrc = document.querySelector("audio[data-key='" + audioKeyCode + "']");
+	console.log(audioSrc);
+
+	audioSrc.classList.add('playing');
+	audioSrc.currentTime = 0;
+	audioSrc.play();
 
 
+
+// 	var audioKey = document.querySelector("audio[data-key]");
+// 	console.log(audioKey);
+
+// 	if (audioKeyCode === audioKey.currentSrc) {
+// 		audio.currentTime = 0;
+// 		audio.play();
+// 	}
 
 }
 
-// MDN code keyQ
+// document.addEventListener('keydown', function(e) {
+//     var soundId = sound[e.which || e.keyCode];
+
+//     if (soundId) {
+//         var elem = document.getElementById(soundId);
+
+//         if ( elem.paused ) {
+//             elem.play();
+//         } else {
+//             elem.pause();
+//         }
+//     } else {
+//         console.log("key not mapped : code is", e.keyCode);
+//     }
+// });
+
 
 
 
