@@ -50,7 +50,7 @@ class Noise {
         this.gainThingy.gain.exponentialRampToValueAtTime(0.001, time + 1);
         this.oscillator.stop(time + 1);
     }
-
+ 
 }
 
 let secondContext = new(window.AudioContext || window.webkitAudioContext)();
